@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Pure CSS-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous"></link>
+        <!--JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!--My Own Code-->
+        <script src="./PaperMe.js"></script>
+    </head>
+
+    <body>
+        <div class="pure-g PaperMe">
+            <div class="pure-u-1-3" id="Options">
+                <form id="userOptions" class="pure-form">
+                    <h1>Choose a theme</h1>
+                    <input type="text" id="theme" class="pure-input-1">
+                    <h2>More Options</h2>
+                    <h3>Resolution</h3>
+                    <input type="text" id="width" class="pure-input-1-3"> x <input type="text" id="height" class="pure-input-1-3"> <input type="checkbox" id="larger"> or larger
+                    <h3>Color</h3>
+                    <input type="checkbox" id="black">
+                    <input type="checkbox" id="white">
+                    <h3>Website</h3>
+                    <input type="text" id="website" class="pure-input-1">
+                    <h3>File Formats</h3>
+                    <input type="checkbox" id="PNG"> PNG <input type="checkbox" id="JPEG"> JPEG
+                    <br>
+                    <br>
+                    <input type="checkbox"> NSFW
+                    <button type="submit" class="pure-button pure-button-primary">Paper Me!</button>
+
+                </form>
+            </div>
+            <div class="pure-u-2-3" id="Results">
+                Results
+            </div>
+        </div>
+    </body>
+</html>
