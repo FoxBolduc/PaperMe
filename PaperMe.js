@@ -7,3 +7,17 @@ $(document).ready(function(){
     return;
 });
 
+//code for color select
+$(document).ready(function(){
+    $(".color-button").click(function(){
+        $(".color-button").removeClass('active');
+        $(this).addClass('active');
+    });
+});
+
+$(document).ready(function(){
+    $(".np-button").click(function(){
+        $(".color-button").removeClass('active');
+    })
+})
+
